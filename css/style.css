@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, Tahoma, Arial , sans-serif
+}
+
+#top-bar-container {
+    background: #3C3C3C;
+}
+
+#top-bar {
+    height: 2.4em;
+    color: #fff;
+    font-size: 0.95em;
+    padding-top: 0.4em;
+    padding-bottom: 0.3em;
+}
+
+#top-bar .bar-icons {
+    width: 1.4em;
+    height: 1.4em;
+    filter: invert(100%);
+}
+
+#top-bar span .location {
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding: 0 0.6em;
+}
+
+#top-bar .maps a:last-child,
+#top-bar .phone p:last-child {
+    border-right: none;
+}
+
+#top-bar .maps .shop-bag {
+    margin-left: 1em;
+}
+
+#top-bar .phone .item2 {
+    margin: 0 0.7em;
+}
+
+#top-bar .phone {
+    float: right;
+}
+
+#top-bar .phone p {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    padding-right: 0.8em;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    background: #fff linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(250,250,250,1) 100%);
+    box-shadow: 0 12px 10px 7px rgba(189, 189, 189, 0.8);
+}
+
+.nav-logo {
+    font-size: 1.25em;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav a {
+    padding: 0.9em 10px;
+    color: #390672;
+}
+
+.main-nav a:hover {
+    color: tomato;
+}
+
+.test-cont {
+    background: #fff;
+    max-width: 981px;
+    height: 100%;
+}
+
+#imgshow .slideshow {
+    height: 100%; 
+    width: 100%;
+    background: grey;
+    object-fit: cover;
+}
+
+#imgshow {
+    height: 16%;
+}
+
+.main-container {
+    margin: 0 auto;
+    background: white url('../img/main/juris-bg_1920.png') no-repeat fixed;
+    background-size: 100%;
+    height: 2050px;
+}
+
+.footer {
+    height: 50px;
+    background: grey;
+    text-align: center;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    padding: 15px 0px 15px 600px;
+}
+
+.footer .up-button {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    position: absolute;
+    margin-top: 10px;
+}
+
+/* 
+    Clearfix clear float
+*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*  
+    Wrapper
+*/
+
+.top-wrapper {
+    margin: 0 auto;
+    max-width: 1190px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+}
+
+.parallax-slider {
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    opacity: 1;
+}
+.transitioning-src {
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -ms-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    opacity: 0.2;
+}
+
+
+@media (max-width: 987px) {
+
+    .nav-logo h1 {
+        display: inline-block;
+    }
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .main-nav a {
+        border: 1px solid red;
+        padding: 0;
+    }
+}
+@media (min-width: 1921px) {
+    .content-wrapper {
+        max-width: 110vh;
+    }
+
+    #top-bar {
+        font-size: 1.2em;
+    }
+
+    .nav-logo {
+        font-size: 1.7em;
+    }
+
+    .main-nav a {
+        font-size: 1.2em;
+    }
+
+    .top-wrapper {
+        max-width: 125vh;
+    }
+};
